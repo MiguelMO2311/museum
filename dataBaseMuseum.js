@@ -180,10 +180,3 @@ createDatabase()
 
 
 
-// Retos. - Obtener un listado de todos los objetos que el museo tiene en préstamo, su localización dentro
-// de la exposición, la fecha de expiración de este, la información básica (nombre, apellidos y  email) de
-// la persona que los prestado.
-
-// Obtener de forma ordenada de mayor a menor, el número total de objetos o piezas agrupados por su situación dentro
-// de la organización, esto es, cuántos hay expuestos, cuántos en itinerancia y cuántos almacenados.
-
