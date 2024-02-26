@@ -38,19 +38,20 @@ async function createDatabase() {
 
         // Consulta 2: Número total de objetos por situación
         const query2 = `
-            SELECT
-                localizacion.tipo AS Situacion,
-                COUNT(*) AS Total_Objetos
-            FROM
-                piezas
-            INNER JOIN
-                localizacion ON piezas.localizacion_id = localizacion.localizacion_id
-            GROUP BY
-                localizacion.tipo
-            ORDER BY
-                Total_Objetos DESC;
+        SELECT
+        exposicion.tipo AS Exposicion,
+        COUNT(*) AS Total_Objetos
+    FROM
+        piezas
+    INNER JOIN
+        exposicion ON piezas.exposicion_id = exposicion.exposicion_id
+    GROUP BY
+        exposicion.tipo
+    ORDER BY
+        Total_Objetos DESC;
+    
         `;
-
+        
         // Inicia una transacción
         await connection.beginTransaction();
 

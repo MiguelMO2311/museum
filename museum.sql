@@ -1,1 +1,1 @@
-SELECT * FROM museum.piezas;
+SELECT * FROM museum.estado_actual_piezas;
